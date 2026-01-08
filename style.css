@@ -1,0 +1,194 @@
+/* =====================
+   GLOBAL
+===================== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+nav {
+  background: #fde6ee;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  margin: 0 18px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #c94f7c;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   HERO SECTIONS
+===================== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+/* HOME HERO (BIG) */
+#home {
+  height: 90vh;
+  background:
+    linear-gradient(
+      rgba(255, 160, 180, 0.55),
+      rgba(255, 160, 180, 0.65)
+    ),
+    url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* CATEGORY HERO (SMALLER) */
+.category {
+  height: 40vh;
+}
+
+/* CATEGORY BACKGROUNDS */
+.beauty-hero {
+  background:
+    linear-gradient(rgba(255,182,193,0.6), rgba(255,182,193,0.6)),
+    url("https://images.unsplash.com/photo-1500835556837-99ac94a94552");
+}
+
+.fashion-hero {
+  background:
+    linear-gradient(rgba(255,182,193,0.6), rgba(255,182,193,0.6)),
+    url("https://images.unsplash.com/photo-1490481651871-ab68de25d43d");
+}
+
+.decor-hero {
+  background:
+    linear-gradient(rgba(255,182,193,0.6), rgba(255,182,193,0.6)),
+    url("https://images.unsplash.com/photo-1505691938895-1758d7feb511");
+}
+
+/* =====================
+   HERO CONTENT BOX
+===================== */
+.hero-content {
+  background: rgba(255,255,255,0.92);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 520px;
+}
+
+.hero h1,
+.hero h2 {
+  font-size: 36px;
+  color: #c94f7c;
+  margin: 0;
+}
+
+.hero p {
+  margin: 15px 0 25px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.hero-btn,
+.product-card a {
+  background: #f7a1c4;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.hero-btn:hover,
+.product-card a:hover {
+  background: #e889ae;
+}
+
+/* =====================
+   SECTION TITLES
+===================== */
+.section-title {
+  font-size: 32px;
+  color: #c94f7c;
+  text-align: center;
+  margin: 80px 0 40px;
+  font-weight: 600;
+}
+
+/* =====================
+   PRODUCT GRID (AMAZON STYLE)
+===================== */
+.product-grid {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 25px rgba(201,79,124,0.12);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  color: #c94f7c;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  background: #fde6ee;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #555;
+}
